@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href=
+'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+
+	<script src=
+'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'>
+	</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src=
+'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
+	</script>
+	
+
+	<link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row justify-content-center">
+			<!-- <div class="col-11 col-sm-9 col-md-7
+				col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2"> -->
+			<div class="col-md-12">	
+				<div class="px-0 pt-4 pb-0 mt-3 mb-3">
+					<form id="form">
+						<ul id="progressbar">
+							<li class="active" id="step1">
+								<strong>General Information</strong>
+							</li>
+							<li id="step2"><strong>Organizer Address</strong></li>
+							<li id="step3"><strong>Department Details</strong></li>
+							<li id="step4"><strong>Payment Details</strong></li>
+						</ul>
+						<!-- <div class="progress">
+							<div class="progress-bar"></div>
+						</div> <br> -->
+						
+						<fieldset>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="title" style="color: blue; font-size: medium; margin-bottom: 20px;text-align: left;padding-bottom: 21px; border-bottom: 1px solid #ebe4e4;">
+										<b>Organizer Info:</b>
+									 </div>
+								</div>
+							</div>
+                            <div class="row">
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="org" style="text-align: left;display: block;">Organization name:</label>
+											<input type="text" class="form-control" id="org" placeholder="Dept of AM">
+										  </div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="org" style="text-align: left;display: block;">Regd. no.of Organizer(If any):</label>
+											<input type="text" class="form-control" id="org" placeholder="ee1122">
+										  </div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="org" style="text-align: left;display: block;">Email Id:</label>
+											<input type="text" class="form-control" id="org" placeholder="org@org.in">
+										  </div>
+									</div>
+							</div>
+
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="contact" style="text-align: left;display: block;">Contact Number</label>
+										<input type="text" class="form-control" id="contact" placeholder="1234123412">
+									  </div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="Alternate" style="text-align: left;display: block;">Alternate Contact Number</label>
+										<input type="text" class="form-control" id="Alternate" placeholder="Alternate Contact Number">
+									  </div>
+								</div>
+						    </div>
+							
+
+
+						<div class="row">
+							
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="Block" style="text-align: left;display: block;">Block/NAC/Municipality</label>
+									<select class="form-control" id="Block">
+									  <option>rasulpur</option>
+									  <option>Knagar</option>
+									  <option>jtnagar</option>
+									  <option>Kamakhya</option>
+									</select>
+								  </div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="Pin" style="text-align: left;display: block;">Pin No</label>
+									<input type="number" class="form-control" id="line1" placeholder="755009">
+								  </div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="organizertype" style="text-align: left;display: block;">Organizer Type</label>
+									<select class="form-control" id="District" placeholder="government">
+									  <option>government</option>
+									  <option>Organizer Type 1</option>
+									  <option>Organizer Type 2</option>
+									</select>
+								  </div>
+							</div>
+					</div>
+						
+							<input type="button" name="next-step"
+								class="next-step" value="save & next" />
+						</fieldset>
+				         <fieldset>
+                           
+							<div class="row">
+								<div class="col-md-12">
+									<div class="title" style="color: blue; font-size: medium; margin-bottom: 20px;text-align: left;padding-bottom: 21px; border-bottom: 1px solid #ebe4e4;">
+										<b>Organizer Address:</b>
+									 </div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="line1" style="text-align: left;display: block;">Address Line1:</label>
+										<input type="text" class="form-control" id="line1" placeholder="guntur">
+									  </div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="State" style="text-align: left;display: block;">State</label>
+										<select class="form-control" id="State">
+										  <option>Odisha</option>
+										  <option>Delhi</option>
+										  <option>Punjab</option>
+										  <option>Andhra Pradesh</option>
+										  <option>Assam </option>
+										</select>
+									  </div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="District" style="text-align: left;display: block;">District</label>
+										<select class="form-control" id="District">
+										  <option>Koraput</option>
+										  <option>Dhenkanal</option>
+										  <option>Balasore</option>
+										  <option>Bargarh</option>
+										  <option>Cuttack </option>
+										</select>
+									  </div>
+								</div>
+						</div>
+
+
+						<div class="row">
+							
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="Block" style="text-align: left;display: block;">Block/NAC/Municipality</label>
+									<select class="form-control" id="Block">
+									  <option>Boriguma</option>
+									  <option>Knagar</option>
+									  <option>nagar</option>
+									  <option>Kamakhya</option>
+									</select>
+								  </div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="Pin" style="text-align: left;display: block;">Pin No</label>
+									<input type="number" class="form-control" id="line1" placeholder="760012">
+								  </div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="organizertype" style="text-align: left;display: block;">Organizer Type</label>
+									<select class="form-control" id="District" placeholder="government">
+									  <option>government</option>
+									  <option>Organizer Type 1</option>
+									  <option>Organizer Type 2</option>
+									</select>
+								  </div>
+							</div>
+						</div>		
+
+
+
+                    
+
+							<input type="button" name="next-step"
+								class="next-step" value="Next Step" />
+							<input type="button" name="previous-step" style="width: 10%;"
+								class="previous-step"
+								value="Previous Step" />
+						</fieldset>
+						<fieldset>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="title" style="color: blue; font-size: medium; margin-bottom: 20px;text-align: left;padding-bottom: 21px; border-bottom: 1px solid #ebe4e4;">
+										<b>Department Details:</b>
+									 </div>
+								</div>
+							</div>
+							<div class="row">	
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="department" style="text-align: left;display: block;">Department & Collector Name</label>
+										<select class="form-control" id="department">
+										  <option>select </option>
+										  <option>dept1 </option>
+										  <option>dept1 </option>
+										  <option>dept1 </option>
+										</select>
+									  </div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="contact1" style="text-align: left;display: block;">Contact No</label>
+										<input type="number" class="form-control" id="contact1" placeholder="Contact no">
+									  </div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="emaik" style="text-align: left;display: block;">Email</label>
+										<input type="email" class="form-control" id="emaik" placeholder="Email">
+									  </div>
+								</div>
+								
+								<div class="custom-control custom-checkbox mt-2">
+									<input type="checkbox" checked class="custom-control-input" id="customCheck1">
+									<label class="custom-control-label" for="customCheck1"> I Accept</label>
+								  </div>
+						</div>
+
+							<input type="button" name="next-step"
+								class="next-step" value="Final Step" />
+							<input type="button" name="previous-step"  style="width: 10%;"
+								class="previous-step"
+								value="Previous Step" />
+						</fieldset>
+						<fieldset>
+							<div class="row">	
+								
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="fees" style="text-align: left;display: block;">Registration Fees</label>
+										<input type="number" class="form-control" id="fees" placeholder="0">
+									  </div>
+								</div>
+								
+						</div>
+							<input type="button" name="previous-step"  style="width: 10%;"
+								class="previous-step"
+								value="Previous Step" />
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="script2.js"></script>
+
+</html>
